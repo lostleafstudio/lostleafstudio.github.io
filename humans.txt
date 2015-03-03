@@ -1,15 +1,19 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* COMPANY */
+Name: Lost Leaf Studio, LLC
+Site: http://lostleafstudio.com
+Location: Minneapolis, MN, USA
 
-# TEAM
+/* TEAM */
+Developer & Designer: Josh Gerdes
+Twitter: @joshgerdes
+Site: http://joshgerdes.com
+Location: Minneapolis, MN, USA
+						
+/* THANKS */
+Name: Laura Gerdes
 
-    Josh Gerdes -- Developer -- @joshgerdes
-
-# THANKS
-
-    Laura Gerdes
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Bootstrap
+/* SITE */
+Last update: 2015/03/03
+Standards: HTML5, CSS3
+Components: Ghost, node.js
+Software: Sublime Text, Photoshop
