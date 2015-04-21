@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0"
                 xmlns:html="http://www.w3.org/TR/REC-html40"
                 xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
@@ -95,7 +95,7 @@
                         </table>
                     </xsl:if>
                     <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &lt; 1">
-                        <p class="desc"><a href="http://localhost:2368/sitemap.xml" class="back-link">&#8592; Back to index</a></p>
+                        <p class="desc"><a href="http://lostleafstudio.com/sitemap.xml" class="back-link">&#8592; Back to index</a></p>
                         <table id="sitemap" cellpadding="3">
                             <thead>
                                 <tr>
@@ -135,7 +135,7 @@
                                 </xsl:for-each>
                             </tbody>
                         </table>
-                        <p class="desc"><a href="http://localhost:2368/sitemap.xml" class="back-link">&#8592; Back to index</a></p>
+                        <p class="desc"><a href="http://lostleafstudio.com/sitemap.xml" class="back-link">&#8592; Back to index</a></p>
                     </xsl:if>
                 </div>
             </body>
