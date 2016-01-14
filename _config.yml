@@ -1,0 +1,27 @@
+# Site settings
+title: Lost Leaf Studio
+description: 'Software Development & Design'
+url: 'http://lostleafstudio.com' 
+baseurl: '/'
+google_analytics: 'UA-16007635-1'
+
+author:
+  name: 'Lost Leaf Studio, LLC'
+  email: info@lostleafstudio.com
+  twitter_username: lostleafstudio
+  facebook_url:  'https://www.facebook.com/LostLeafStudio'
+  linkedin_url:  'https://www.linkedin.com/company/lost-leaf-studio'
+
+# Build settings
+destination: _site
+permalink: /:title/
+markdown: kramdown
+highlighter: pygments
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'src']

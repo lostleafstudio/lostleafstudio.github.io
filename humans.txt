@@ -1,8 +1,3 @@
-/* COMPANY */
-Name: Lost Leaf Studio, LLC
-Site: http://lostleafstudio.com
-Location: Minneapolis, MN, USA
-
 /* TEAM */
 Developer & Designer: Josh Gerdes
 Twitter: @joshgerdes
@@ -13,7 +8,7 @@ Location: Minneapolis, MN, USA
 Name: Laura Gerdes
 
 /* SITE */
-Last update: 2015/03/03
+Last update: 2015/01/13
 Standards: HTML5, CSS3
-Components: Ghost, node.js
+Components: Jekyll
 Software: Sublime Text, Photoshop
