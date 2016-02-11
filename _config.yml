@@ -16,9 +16,10 @@ author:
 destination: _site
 permalink: /:title/
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 kramdown:
+  syntax_highlighter: rouge
   # use Github Flavored Markdown
   input: GFM
   # do not replace newlines by <br>s
