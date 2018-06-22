@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 clearfix">
-        <a class="navbar-brand" href="{{ site.baseurl }}">
-          <div class="navbar-brand__logo" style="background-image: url({{ "images/logo.png" | prepend: site.baseurl }})"></div>
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+          <div class="navbar-brand__logo" style="background-image: url({{ site.baseurl }}/images/logo.png)"></div>
           <div class="navbar-brand__title">{{ site.title }}</div>
           <div class="navbar-brand__description">{{ site.description }}</div>
         </a>
@@ -11,13 +11,13 @@
       <div class="col-sm-6 clearfix">
         <ul class="nav navbar-nav">
           <li>
-            <a href="{{ "contact" | prepend: site.baseurl }}">Contact</a>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
           </li>
           <li>
-            <a href="{{ "" | prepend: site.baseurl }}">Portfolio</a>
+            <a href="{{ site.baseurl }}/">Portfolio</a>
           </li>
           <li>
-            <a href="{{ "about" | prepend: site.baseurl }}">About</a>
+            <a href="{{ site.baseurl }}/about">About</a>
           </li>
         </ul>
       </div>

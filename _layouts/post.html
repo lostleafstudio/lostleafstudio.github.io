@@ -13,7 +13,7 @@ layout: default
     {{ content }}
   </div>
   <div class="col-sm-8">
-    <img class="img-responsive" src="{{ page.image_main | prepend: site.baseurl}}" alt="">
+    <img class="img-responsive" src="{{ site.baseurl }}/{{ page.image_main }}" alt="">
     <div class="post-meta">
       <span class="post-meta__label">Posted:</span> <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__label">Tags:</span> {% for tag in page.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}" class="post-meta__tag">{{ tag }}</a> {% endfor %}</span>
     </div>

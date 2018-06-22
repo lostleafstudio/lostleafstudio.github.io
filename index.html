@@ -9,8 +9,8 @@ layout: default
     {% endif %}
 
       <div class="col-sm-4 portfolio-item">
-        <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" data-content="{{ post.title }}" class="portfolio-item__image">  
-          <img class="img-responsive" src="{{ post.image_thumb | prepend: site.baseurl}}" alt="">
+        <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}" data-content="{{ post.title }}" class="portfolio-item__image">  
+          <img class="img-responsive" src="{{ site.baseurl }}/{{ post.image_thumb }}" alt="">
         </a>  
       </div>
 
