@@ -1,12 +1,9 @@
----
-layout: null
-exclude: true
----
-$(document).ready(function (e) {
-    $('.post img').addClass('img-responsive')
-  
-    $('a').on('click', function() {
-      var id = $(this).attr('href');
-      $('html, body').animate({scrollTop: $(id).offset().top - $('nav').height});
-  });
+feather.replace({ class: 'icons' })
+
+const navToggler = document.querySelector('.navbar-toggler')
+const nav = document.querySelector('.navbar-nav')
+
+navToggler.addEventListener('click', function () {
+  navToggler.classList.toggle('collapsed')
+  nav.classList.toggle('nav-active')
 })
