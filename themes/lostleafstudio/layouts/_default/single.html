@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ if .Params.headerTitle }}
+<section class="single-header {{ .Params.headerClass }}">
+    <div>
+        <div class="callout">
+            <div class="title">{{ .Params.headerTitle | safeHTML }}</div>
+        </div>
+        <div class="graphic">
+            <img src="{{ .Site.BaseURL }}/images/{{ .Params.headerImage }}" alt="{{ .Params.headerImageAlt }}" />
+        </div>
+    </div>
+</section>
+<section class="download">
+    <div>
+        <div class="title">Available for Download Today:</div>
+        <div>
+            <a href="{{ .Params.storeApple }}" target="_blank"><img alt="Download on the App Store" src="{{ .Site.BaseURL }}/images/app-store-badge.png" /></a>
+            <a href="{{ .Params.storeGoogle }}" target="_blank"><img alt="Get it on Google Play" src="{{ .Site.BaseURL }}/images/google-play-badge.png" /></a>
+        </div>
+    </div>
+</section>
+{{ end }}
+<section>
+    <div>
+        <div class="single-content">{{ .Content }}</div>
+    </div>
+</section>
+{{ end }}

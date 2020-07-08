@@ -1,0 +1,28 @@
+<header>
+  <div class="navbar">
+    <a class="navbar-brand" href="{{ .Site.BaseURL }}/">
+      <div class="navbar-brand__logo" style="background-image: url('{{ .Site.BaseURL }}/images/logo.png')"></div>
+      <div class="navbar-brand__title">{{ .Site.Title }}</div>
+      <div class="navbar-brand__description">{{ .Site.Params.Description }}</div>
+    </a>
+  
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+    aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
+    </button>
+
+    <ul class="navbar-nav">
+      <li class="navbar-item active">
+        <a class="navbar-link" href="{{ .Site.BaseURL }}">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="{{ .Site.BaseURL }}/river-raid-classic">River Raid Classic</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="{{ .Site.BaseURL }}/cribbage-scoring-pegboard">Cribbage Pegboard</a>
+      </li>
+    </ul>
+  </div>
+</header>
