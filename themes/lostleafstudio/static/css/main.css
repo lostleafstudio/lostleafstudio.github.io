@@ -175,6 +175,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+  text-align: center;
 }
 
 .capabilities .feather {
@@ -193,7 +194,7 @@ header {
 
 .capabilities .description {
   padding: 10px 50px;
-  text-align: center;
+  min-width: 220px;
 }
 
 footer {
