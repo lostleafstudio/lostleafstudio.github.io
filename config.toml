@@ -5,13 +5,10 @@ title = "Lost Leaf Studio"
 theme = "lostleafstudio"
 
 paginate = 12
-googleAnalytics = "UA-16007635-1"
+googleAnalytics = "G-K23HXH4YFJ"
 enableRobotsTXT = true
 pygmentsCodefences = true
 pygmentsStyle = "monokai"
-
-[taxonomies]
-  tag = "tags"
 
 [Permalinks]
   posts = "/:title"
