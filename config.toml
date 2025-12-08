@@ -4,7 +4,6 @@ defaultContentLanguage = "en"
 title = "Lost Leaf Studio"
 theme = "lostleafstudio"
 
-paginate = 12
 googleAnalytics = "G-K23HXH4YFJ"
 enableRobotsTXT = true
 pygmentsCodefences = true
