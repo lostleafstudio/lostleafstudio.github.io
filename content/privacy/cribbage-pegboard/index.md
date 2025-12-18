@@ -1,12 +1,12 @@
 ---
-title: Privacy Policy - Cribbage Scoring Pegboard
+title: Privacy Policy - Cribbage Pegboard Tracker
 ---
 
-# Privacy Policy - Cribbage Scoring Pegboard
+# Privacy Policy - Cribbage Pegboard Tracker
 
 Effective Date: *January 1, 2026*
 
-Lost Leaf Studio, LLC (“we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how the mobile game Cribbage Scoring Pegboard handles user information. Cribbage Scoring Pegboard is an offline arcade-style game and is designed to operate without collecting or transmitting personal data.
+Lost Leaf Studio, LLC (“we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how the mobile game Cribbage Pegboard Tracker handles user information. Cribbage Pegboard Tracker is an offline arcade-style game and is designed to operate without collecting or transmitting personal data.
 
 ## Information We Collect
 
@@ -22,7 +22,7 @@ This includes, but is not limited to:
 
 ## Third-Party Services
 
-Cribbage Scoring Pegboard uses no third-party services, SDKs, analytics tools, or advertising networks.
+Cribbage Pegboard Tracker uses no third-party services, SDKs, analytics tools, or advertising networks.
 The app does not:
 
 - Show ads
@@ -36,11 +36,11 @@ The app contains no in-app purchases or payment features.
 
 ## Internet Connectivity
 
-Cribbage Scoring Pegboard operates entirely offline. The app does not require or use an internet connection and does not send any data outside the device.
+Cribbage Pegboard Tracker operates entirely offline. The app does not require or use an internet connection and does not send any data outside the device.
 
 ## Children’s Privacy
 
-Cribbage Scoring Pegboard collects no data from any user, including children under 13. The game is compliant with COPPA, GDPR-K, and similar regulations because no personal information is gathered.
+Cribbage Pegboard Tracker collects no data from any user, including children under 13. The game is compliant with COPPA, GDPR-K, and similar regulations because no personal information is gathered.
 
 ## Your Rights
 
@@ -51,7 +51,7 @@ Since no data is collected or stored:
 
 ## Security
 
-Because Cribbage Scoring Pegboard does not collect or transmit information, no user data is at risk of unauthorized access or disclosure.
+Because Cribbage Pegboard Tracker does not collect or transmit information, no user data is at risk of unauthorized access or disclosure.
 
 ## Changes to This Policy
 

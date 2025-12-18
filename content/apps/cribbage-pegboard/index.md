@@ -1,5 +1,4 @@
 ---
-date: "2020-07-01T13:00:00Z"
 tags:
 - mobile
 - app

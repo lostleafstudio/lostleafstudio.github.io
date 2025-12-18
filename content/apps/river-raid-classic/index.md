@@ -1,10 +1,9 @@
 ---
-date: "2020-07-01T13:00:00Z"
 tags:
 - mobile
 - app
 - game
-title: River Raid Classic
+title: River Raiders
 headerClass: header-riverraid
 headerTitle: "River Raid<br/>Classic"
 headerImage: river-raid.png

@@ -8,6 +8,7 @@ googleAnalytics = "G-K23HXH4YFJ"
 enableRobotsTXT = true
 pygmentsCodefences = true
 pygmentsStyle = "monokai"
+pluralizeListTitles = false
 
 [Permalinks]
   posts = "/:title"
