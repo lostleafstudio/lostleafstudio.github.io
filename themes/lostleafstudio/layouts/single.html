@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main class="content">
+{{ if .Params.headerTitle }}
+<section class="app-header app-header--{{ .Params.headerClass | safeHTML }}">
+  <div class="app-header__inner main">
+    <div class="app-header__layout">
+      <div class="app-header__text">
+        <h1 class="app-header__title">{{ .Params.headerTitle | safeHTML }}</h1>
+        <p class="app-header__tagline">
+          {{ .Params.headerTagline | safeHTML }}
+        </p>
+      </div>
+      <div class="app-header__image">
+        <img
+          src="{{ .Site.BaseURL }}/images/{{ .Params.headerImage }}"
+          alt="{{ .Params.headerImageAlt }}"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<section class="main">
+    {{ if .Params.storeApple }}
+    <section class="section download">
+        <div class="section-inner">
+            <h3>Available for Download:</h3>
+            <div>
+                <a href="{{ .Params.storeApple }}" target="_blank"><img alt="Download on the App Store" src="{{ .Site.BaseURL }}/images/badge-app-store.png" /></a>
+                <a href="{{ .Params.storeGoogle }}" target="_blank"><img alt="Get it on Google Play" src="{{ .Site.BaseURL }}/images/badge-google-play.png" /></a>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+    <section class="section single-content">
+        <div class="single-content-inner">
+            {{ .Content }}
+        </div>
+    </section>
+</section>
+</main>
+{{ end }}

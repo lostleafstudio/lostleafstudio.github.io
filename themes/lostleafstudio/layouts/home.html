@@ -1,0 +1,60 @@
+{{ define "main" }}
+<main class="content main">
+  <section class="section tagline">
+    <div class="section-inner">
+      <span>We <b>build</b> and <b>design</b> digital products that make you look good.</span>
+    </div>
+  </section>
+
+  <section class="section card cribbage">
+    <div class="section-inner">
+      <div class="card__callout">
+        <h2>Cribbage Pegboard</h2>
+        <p>Scoring made easy whether you're at home or on the go. Download today!</p>
+        <a href="{{ .Site.BaseURL }}/apps/cribbage-pegboard/" class="btn">Learn More</a>
+      </div>
+      <div class="card__image">
+        <img src="{{ .Site.BaseURL }}/images/cribbage-pegboard-screen.png" alt="Screenshot of Cribbage Pegboard on iPhone"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section card raiders">
+    <div class="section-inner">
+      <div class="card__image">
+        <img src="{{ .Site.BaseURL }}/images/river-raiders-screen.png" alt="Screenshot of River Raiders on iPhone"/>
+      </div>
+      <div class="card__callout">
+        <h2>River Raiders</h2>
+        <p>Relive your childhood adventures on the river of no return.</p>
+        <a href="{{ .Site.BaseURL }}/apps/river-raiders/" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section capabilities">
+    <div class="cap-grid">
+      <div class="cap">
+        <div><i data-feather="layers"></i></div>
+        <h3>Web Design</h3>
+        <p>A successful site should be designed around aesthetics and usability. Good web design has a positive impact on your guests and the bottom line.</p>
+      </div>
+      <div class="cap">
+        <div><i data-feather="smartphone"></i></div>
+        <h3>Mobile Development</h3>
+        <p>Meet your audience where they want to be. Our team of experienced developers create rich mobile experiences that keep users engaged and filled with joy.</p>
+      </div>
+      <div class="cap">
+        <div><i data-feather="dollar-sign"></i></div>
+        <h3>E-Commerce Solutions</h3>
+        <p>We design e-commerce solutions that make it easy for your guest to search and purchase your products. We create sites that turn curiosity into conversion.</p>
+      </div>
+      <div class="cap">
+        <div><i data-feather="zap"></i></div>
+        <h3>Performance Optimization</h3>
+        <p>To meet all of your business goals you need to be able to reach your audience fast and efficiently. We strive to build sites and applications that are optimized for success.</p>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

@@ -1,0 +1,31 @@
+baseURL = "https://lostleafstudio.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Lost Leaf Studio"
+theme = "lostleafstudio"
+
+enableRobotsTXT = true
+pluralizeListTitles = false
+
+[services.googleAnalytics]
+  id = "G-K23HXH4YFJ"
+
+[Permalinks]
+  posts = "/:title"
+
+[params]
+  author = "Lost Leaf Studio, LLC"
+  description = "Software Development & Design"
+  map = "goo.gl/maps/cdsHgU9av6scdwSq5"
+  ownerSite = "joshgerdes.com"
+
+[params.social]
+  gitHub = "lostleafstudio"
+  linkedin = "company/lost-leaf-studio"
+  twitter = "lostleafstudio"
+  email   = "info@lostleafstudio.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

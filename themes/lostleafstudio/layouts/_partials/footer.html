@@ -1,0 +1,44 @@
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="about">
+        <h4>About Us</h4>
+        <p>We are a full service web and mobile development studio specializing in effective
+          standards based design and development. We pride ourselves in building quality user-friendly websites
+          and applications with the most current technologies available.</p>
+      </div>
+      <div class="contact">
+        <h4>Contact Info</h4>
+        <ul>
+          {{ with .Site.Params.Social.Email }}
+          <li><a href="mailto:{{.}}" title="Email Us" rel="noopener noreferrer"
+              target="_blank"><i data-feather="mail"></i>info@lostleafstudio.com</a></li>
+          {{ end }}
+          {{ with .Site.Params.Map }}
+          <li><a href="https://{{.}}" title="Our Location" rel="noopener noreferrer"
+              target="_blank"><i data-feather="map"></i>Minneapolis, Minnesota</a></li>
+          {{ end }}
+          <li class="social">
+              {{ with .Site.Params.Social.Twitter }}
+              <a href="https://twitter.com/{{.}}" title="Twitter" rel="noopener noreferrer" target="_blank"><i
+                  data-feather="twitter"></i></a>
+              {{ end }}
+              {{ with .Site.Params.Social.LinkedIn }}
+              <a href="https://linkedin.com/{{.}}" title="LinkedIn" rel="noopener noreferrer" target="_blank"><i
+                  data-feather="linkedin"></i></a>
+              {{ end }}
+              {{ with .Site.Params.OwnerSite }}
+              <a href="https://{{.}}" title="The Owner" rel="noopener noreferrer" target="_blank"><i
+                  data-feather="smile"></i></a>
+              {{ end }}
+              <a href="/index.xml" title="RSS" target="_blank"><i data-feather="rss"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">&copy; {{ now.Format "2006" }} {{ .Site.Params.Author }}. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"></script>
+<script src="/js/main.js"></script>
+{{ template "_internal/google_analytics.html" . }}

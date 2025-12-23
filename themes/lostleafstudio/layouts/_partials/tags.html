@@ -1,0 +1,16 @@
+<main class="main">
+    <section class="section">
+        <div class="section-inner">
+            {{ $taxonomy := "tags" }}
+            {{ with .Param $taxonomy }}
+            <section class="tags">
+                {{ range $index, $tag := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+                {{- end -}}
+                {{- end -}}
+            </section class="tags">
+            {{ end }}
+        </div>
+    </section>
+</main>
