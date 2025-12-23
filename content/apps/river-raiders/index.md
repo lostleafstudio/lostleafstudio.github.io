@@ -7,8 +7,8 @@ title: River Raiders
 headerClass: raiders
 headerTitle: "River Raiders"
 headerTagline: "Relive your childhood adventures on the<br/>river of no return."
-headerImage: river-raid-iphone.png
-headerImageAlt: "River Raiders Header"
+headerImage: river-raiders-screen.png
+headerImageAlt: "Screenshot of River Raiders on iPhone"
 storeGoogle: https://play.google.com/store/apps/details?id=com.lostleafstudio.riverraiders
 storeApple: https://itunes.apple.com/us/app/river-raiders
 ---

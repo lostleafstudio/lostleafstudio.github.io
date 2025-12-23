@@ -6,8 +6,8 @@ title: Cribbage Pegboard
 headerClass: cribbage
 headerTitle: "Cribbage Pegboard"
 headerTagline: "Scoring made easy whether you're at home or on the go."
-headerImage: cribbage-pegboard-iphone.png
-headerImageAlt: "Cribbage Pegboard Header"
+headerImage: cribbage-pegboard-screen.png
+headerImageAlt: "Screenshot of Cribbage Pegboard on iPhone"
 storeGoogle: https://play.google.com/store/apps/details?id=com.lostleafstudio.cribbage_pegboard
 storeApple: https://itunes.apple.com/us/app/cribbage-scoring-pegboard/id1519800043?ls=1&mt=8
 ---
