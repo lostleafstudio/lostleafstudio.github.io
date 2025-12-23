@@ -588,13 +588,14 @@ footer .feather {
 
   .card {
     border-radius: 24px;
+    height: 500px;
     margin: 40px 0;
     padding: 32px 24px;
   }
 
   .card__callout,
   .raiders.card .card__callout {
-    padding: 40px 20px;
+    padding: 40px 20px 0;
   }
 
   .raiders.card .card__callout {
