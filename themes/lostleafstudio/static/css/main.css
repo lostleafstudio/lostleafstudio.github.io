@@ -388,6 +388,18 @@ header {
   padding: 60px 0;
 }
 
+.single-content a,
+.single-content a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.single-content a:hover,
+.single-content a:focus {
+  color: #718D35;
+  text-decoration: underline;
+}
+
 /* ===========================
    DOWNLOAD SECTION
    =========================== */
