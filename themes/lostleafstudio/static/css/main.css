@@ -150,7 +150,10 @@ header {
 .card__callout h2 {
   font-size: 2.25rem;
   margin: 0 0 1rem;
-  text-shadow: 3px 3px 10px #333;
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.5), 
+    2px 2px 0 rgba(0, 0, 0, 0.3), 
+    3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card__callout p {
@@ -345,7 +348,10 @@ header {
 }
 
 .app-header--cribbage .app-header__title {
-  text-shadow: 3px 3px 8px #666;
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.5), 
+    2px 2px 0 rgba(0, 0, 0, 0.3), 
+    3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Raiders App Header Variant */
@@ -362,7 +368,10 @@ header {
 }
 
 .app-header--raiders .app-header__title {
-  text-shadow: 3px 3px 8px #666;
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.5), 
+    2px 2px 0 rgba(0, 0, 0, 0.3), 
+    3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .app-header--raiders .app-header__tagline {
