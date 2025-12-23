@@ -1,429 +1,638 @@
-@import url(navbar.css);
-@import url(button.css);
+/* ===========================
+   RESET & BASE STYLES
+   =========================== */
+
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
+  background: #fff;
+  color: #111;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  position: fixed;
 }
 
-body {
-  background: #e6e6e6;
-  color: #333;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
+/* ===========================
+   LAYOUT
+   =========================== */
 
-header {
-  height: 52px;
+.main {
+  margin: 0 auto;
+  max-width: 1040px;
+  min-width: 320px;
+  padding: 0 80px;
 }
 
 .content {
-  flex: 100%;
-}
-
-.content > section {
-  display: flex;
-  flex: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.content > section > div {
-  min-height: 240px;
-}
-
-.content > section > div,
-footer > div,
-header {
-  display: flex;
-  flex: 100%;
-  max-width: 991px;
-  min-width: 320px;
-  flex-wrap: wrap;
-}
-
-.content a,
-.content a:visited {
-  color: #333;
-  text-decoration: none;
-}
-
-.content a:hover,
-.content a:focus {
-  color: #718d35;
-  text-decoration: none;
-}
-
-.tagline > div {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tagline b {
-  color: #718d35;
-}
-
-.cribbage {
-  background-image: linear-gradient(
-    160deg,
-    rgb(76, 175, 80) 0%,
-    rgb(33, 150, 243) 100%
-  );
-  color: #fff;
-  padding: 40px 0;
-}
-
-.cribbage > div {
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.cribbage .callout {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.cribbage .title {
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 50px;
-  text-shadow: 3px 3px 8px #333;
-}
-
-.cribbage .description {
-  padding: 40px 0 0;
-  text-align: center;
-}
-
-.cribbage img {
-  height: 500px;
-}
-
-.riverraid {
-  background-color: #4cd964;
-  color: #fff;
-}
-
-.riveraid > div {
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.riverraid div:first-child {
-  flex: 50%;
-  margin-bottom: -1px;
-}
-
-.riverraid .callout {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.riverraid .title {
-  color: #fff;
-  font-family: 'Notable', sans-serif;
-  font-size: 44px;
-  text-shadow: 2px 2px 4px #333;
-  text-align: center;
-}
-
-.riverraid .description {
-  padding: 30px 0 0;
-  text-align: center;
-}
-
-.riverraid .btn {
-  margin: 30px 0;
-}
-
-.riverraid img {
-  min-width: 320px;
-  max-width: 100%;
-  height: auto;
-}
-
-.capabilities > div {
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.capabilities .callout {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.capabilities .feather {
-  color: #333;
-  height: 50px;
-  width: 50px;
-  padding: 10px 0;
-}
-
-.capabilities .title {
-  color: #718d35;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.capabilities .description {
-  padding: 10px 50px;
-  min-width: 220px;
-}
-
-footer {
-  background-color: #82a8ad;
-  min-height: 270px;
-  display: flex;
-  flex: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-footer > div {
-  justify-content: space-evenly;
-}
-
-footer .about {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
-  padding: 40px 0 0;
-}
-
-footer .contact {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
-  padding: 40px 0 0;
-  align-items: center;
-}
-
-footer .title {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0 40px 20px;
-  text-align: left;
-}
-
-footer .feather {
-  color: #333;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-}
-
-footer a,
-footer a:visited {
-  color: #333;
-  text-decoration: none;
-}
-
-footer a:hover,
-footer a:focus {
-  text-decoration: underline;
-}
-
-footer .description,
-footer .contact ul {
-  padding: 0 40px;
-}
-
-footer .contact .title {
-  width: 234px;
-}
-
-footer .contact ul {
-  margin: 0;
-  list-style: none;
-  list-style-position: inside;
-  width: 234px;
-}
-
-footer .contact ul li {
-  display: flex;
-  margin: 20px 0 0;
-}
-
-footer .contact li:first-child {
-  margin: 0;
-}
-
-footer .contact li > .feather {
-  padding: 0 10px 0 0;
-}
-
-footer .social {
-  margin: 30px 0 0;
-}
-
-footer .social a {
-  margin: 0 35px 0 0;
-}
-
-footer .copyright {
-  font-size: 14px;
-  padding: 30px 40px 10px;
   width: 100%;
 }
 
-/* Single */
-.single-header {
-  margin: 20px 0;
+/* ===========================
+   HEADER
+   =========================== */
+
+header {
+  padding: 12px 0 20px;
+  width: 100%;
 }
 
-.single-content {
-  padding: 20px;
-}
-
-.download > div {
-  display: flex;
-  min-height: auto !important;
-  flex-wrap: wrap;
-  justify-content: center;
+.header-inner {
   align-items: center;
+  display: flex;
+  height: 80px;
 }
 
-.download > div > div {
+/* Brand */
+
+.brand {
+  align-items: normal;
+  color: #111;
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: #111;
+}
+
+.brand__logo {
+  flex-shrink: 0;
+  height: 80px;
+  width: 80px;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand__title {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand__description {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 3.3px;
+  padding-left: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ===========================
+   SECTIONS
+   =========================== */
+
+.section {
+  margin: 80px 0;
+  padding: 60px 0;
+}
+
+.section-inner {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  height: 100%;
+  justify-content: space-between;
+  width: auto;
+}
+
+.section-inner > * {
   flex: 1;
-  min-width: 320px;
+}
+
+/* ===========================
+   TAGLINE
+   =========================== */
+
+.tagline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 20px 0;
   text-align: center;
 }
 
-.download .title {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0 0 15px;
+.tagline b {
+  color: #718D35;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+
+.card {
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  height: 440px;
+  overflow: hidden;
+  padding: 60px;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.card__callout {
+  align-self: center;
+  max-width: 420px;
+}
+
+.card__callout h2 {
+  font-size: 2.25rem;
+  margin: 0 0 1rem;
+  text-shadow: 3px 3px 10px #333;
+}
+
+.card__callout p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.card__image {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+  margin-bottom: -60px;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.card__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/* Cribbage Card Variant */
+
+.cribbage.card {
+  background: linear-gradient(180deg, #4caf50, #2196f3);
+  color: #fff;
+}
+
+/* Raiders Card Variant */
+
+.raiders.card {
+  background: linear-gradient(to right, #6a923f 45%, #2d32b8 45%);
+  color: #fff;
+  padding-left: 0;
+}
+
+.raiders.card .card__callout {
+  padding-left: 60px;
+}
+
+.raiders.card .card__callout h2,
+.raiders.card .card__callout p {
+  color: #e8e84a;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.raiders.card .card__callout p {
+  color: #fff;
+}
+
+.raiders.card .card__image {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 0;
+  margin-right: auto;
+  overflow: hidden;
+  width: auto;
+}
+
+.raiders.card .card__image img {
+  display: block;
+  height: 280px;
+  width: auto;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+
+.btn {
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+  border: 2px solid #718D35;
+  color: #718D35;
+}
+
+/* ===========================
+   CAPABILITIES
+   =========================== */
+
+.cap-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cap {
+  text-align: center;
+}
+
+.cap h3 {
+  color: #718D35;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem;
+}
+
+.cap p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cap .feather {
+  color: #111;
+  height: 80px;
+  padding: 10px 0;
+  width: 80px;
+}
+
+/* ===========================
+   APP HEADER
+   =========================== */
+
+.app-header {
+  height: 260px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.app-header__inner {
+  height: 100%;
+}
+
+.app-header__layout {
+  align-items: stretch;
+  display: flex;
+  height: 100%;
+}
+
+.app-header__text {
+  align-self: center;
+  max-width: 420px;
+}
+
+.app-header__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0 0 1rem;
+}
+
+.app-header__tagline {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.app-header__image {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  overflow: hidden;
+  padding-top: 40px;
+  position: relative;
+  width: 300px;
+}
+
+.app-header__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/* Cribbage App Header Variant */
+
+.app-header--cribbage {
+  background: linear-gradient(180deg, #4caf50, #2196f3);
+  color: #fff;
+}
+
+.app-header--cribbage .app-header__title,
+.app-header--cribbage .app-header__tagline {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-header--cribbage .app-header__title {
+  text-shadow: 3px 3px 8px #666;
+}
+
+/* Raiders App Header Variant */
+
+.app-header--raiders {
+  background: linear-gradient(to right, #6a923f 46%, #2d32b8 46%);
+  color: #e8e84a;
+}
+
+.app-header--raiders .app-header__title,
+.app-header--raiders .app-header__tagline {
+  color: #e8e84a;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.app-header--raiders .app-header__title {
+  text-shadow: 3px 3px 8px #666;
+}
+
+.app-header--raiders .app-header__tagline {
+  color: #fff;
+}
+
+.app-header--raiders .app-header__image {
+  padding-top: 80px;
+  width: 500px;
+}
+
+/* ===========================
+   SINGLE PAGE
+   =========================== */
+
+.single-header {
+  margin: 0;
+  padding: 0;
+}
+
+.single-content {
+  margin: 0;
+  padding: 60px 0;
+}
+
+.single-content a,
+.single-content a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.single-content a:hover,
+.single-content a:focus {
+  color: #718D35;
+  text-decoration: underline;
+}
+
+/* ===========================
+   DOWNLOAD SECTION
+   =========================== */
+
+.download {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .download img {
   height: 50px;
 }
 
-.header-cribbage {
-  background-image: linear-gradient(
-    160deg,
-    rgb(76, 175, 80) 0%,
-    rgb(33, 150, 243) 100%
-  );
-  color: #fff;
+/* ===========================
+   LISTS & TAGS
+   =========================== */
+
+.list,
+.tags ul {
+  color: #718D35;
 }
 
-.header-riverraid {
-  background-color: #4cd964;
-  color: #fff;
+.list a,
+.tags a {
+  color: #111;
+  text-decoration: none;
 }
 
-.header-cribbage > div,
-.header-riveraid > div {
-  justify-content: space-evenly;
-  align-items: center;
+.list a:hover,
+.list a:focus,
+.tags a:hover,
+.tags a:focus {
+  color: #111;
+  text-decoration: underline;
 }
 
-.header-cribbage .graphic,
-.header-riverraid .graphic {
-  text-align: center;
-  flex: 50%;
-  margin-bottom: -3px;
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  background: #82a8ad;
+  color: #333;
+  width: 100%;
 }
 
-.header-cribbage .graphic img {
-  height: 212px;
-  margin: 35px 0 0;
+.footer-inner {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 60px 80px 10px;
 }
 
-.header-cribbage .callout,
-.header-riverraid .callout {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.footer-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
 
-.header-cribbage .title {
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 50px;
-  text-shadow: 3px 3px 8px #333;
-  padding: 20px 0;
+footer h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
 }
 
-.header-riverraid .title {
-  color: #fff;
-  font-family: 'Notable', sans-serif;
-  font-size: 44px;
-  text-shadow: 2px 2px 4px #333;
-  text-align: center;
-  padding: 0 0 20px;
+footer p {
+  line-height: 1.6;
 }
 
-.header-riverraid img {
-  min-width: 320px;
-  max-width: 100%;
-  height: auto;
+footer li {
+  line-height: 2.6;
 }
 
-.screenshot {
-  margin: 20px auto;
-  max-width: 500px;
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.screenshot img {
-  display: block;
-  min-width: 280px;
-  max-width: 100%;
-  height: auto;
+footer .feather {
+  color: #333;
+  height: 20px;
+  padding: 0;
+  width: 20px;
 }
 
-.screenshots {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+/* Contact Section in Footer */
+
+.contact svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
-.screenshots > div {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+.contact a,
+.contact a:visited {
+  color: #333;
+  text-decoration: none;
 }
 
-.screenshots img {
-  width: 280px;
-  height: auto;
+.contact a:hover,
+.contact a:focus {
+  color: #718D35;
+  text-decoration: underline;
 }
 
-.list > div {
-  display: block !important;
-  padding-left: 30px;
+.contact a:hover .feather,
+.contact a:focus .feather {
+  stroke: #718D35;
+}
+
+/* Social Section in Footer */
+
+.social svg {
+  margin: 3rem 2.4rem 0 0;
+}
+
+/* Copyright */
+
+.copyright {
+  font-size: 0.75rem;
+  margin-top: 40px;
+}
+
+/* ===========================
+   MEDIA QUERIES
+   =========================== */
+
+/* App Header Mobile */
+@media (max-width: 768px) {
+  .app-header {
+    height: auto;
+    padding: 40px 0 0;
+  }
+
+  .app-header__layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .app-header__image {
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 0;
+    width: 220px;
+  }
+
+  .download {
+    margin: 0;
+  }
+
+  .download .section-inner {
+    gap: 1rem;
+  }
+}
+
+/* General Mobile */
+@media (max-width: 768px) {
+  .main {
+    padding: 0 24px;
+  }
+
+  header {
+    padding: 10px 0 16px;
+  }
+  
+  .brand__logo {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .brand__title {
+    font-size: 24px;
+  }
+  
+  .brand__description {
+    font-size: 11px;
+    letter-spacing: 0.9px;
+  }
+
+  .tagline {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    border-radius: 24px;
+    margin: 40px 0;
+    padding: 32px 24px;
+  }
+
+  .card__callout,
+  .raiders.card .card__callout {
+    padding: 40px 20px;
+  }
+
+  .raiders.card .card__callout {
+    margin: 40px 0;
+  }
+
+  .card__image {
+    margin: 0;
+  }
+
+  .raiders.card .card__image {
+    display: none;
+  }
+
+  .section {
+    margin: 60px 0;
+    padding: 0;
+  }
+
+  .section-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    padding: 40px 24px 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social a:last-child svg {
+    margin-right: 0;
+  }
 }
