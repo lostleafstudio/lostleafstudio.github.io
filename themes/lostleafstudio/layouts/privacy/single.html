@@ -1,7 +1,9 @@
 {{ define "main" }}
-<section>
-    <div>
-        <div class="single-content">{{ .Content }}</div>
-    </div>
-</section>
+<main class="main">
+    <section class="section single-content">
+        <div class="single-content-inner">
+            {{ .Content }}
+        </div>
+    </section>
+</main>
 {{ end }}

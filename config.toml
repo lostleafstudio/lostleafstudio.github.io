@@ -1,14 +1,14 @@
 baseURL = "https://lostleafstudio.com"
-languageCode = "en"
+languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Lost Leaf Studio"
 theme = "lostleafstudio"
 
-googleAnalytics = "G-K23HXH4YFJ"
 enableRobotsTXT = true
-pygmentsCodefences = true
-pygmentsStyle = "monokai"
 pluralizeListTitles = false
+
+[services.googleAnalytics]
+  id = "G-K23HXH4YFJ"
 
 [Permalinks]
   posts = "/:title"

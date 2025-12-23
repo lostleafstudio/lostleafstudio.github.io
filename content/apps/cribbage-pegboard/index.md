@@ -2,27 +2,32 @@
 tags:
 - mobile
 - app
-title: Cribbage Scoring Pegboard
-headerClass: header-cribbage
-headerTitle: "Cribbage<br/>Scoring<br/>Pegboard"
-headerImage: cribbage-pegboard.png
-headerImageAlt: Cribbage Scoring Pegboard Header
+title: Cribbage Pegboard
+headerClass: cribbage
+headerTitle: "Cribbage Pegboard"
+headerTagline: "Scoring made easy whether you're at home or on the go."
+headerImage: cribbage-pegboard-iphone.png
+headerImageAlt: "Cribbage Pegboard Header"
 storeGoogle: https://play.google.com/store/apps/details?id=com.lostleafstudio.cribbage_pegboard
 storeApple: https://itunes.apple.com/us/app/cribbage-scoring-pegboard/id1519800043?ls=1&mt=8
 ---
 
-Leave your pegboard at home and use this application to keep track of your cribbage score. Allows for easily adding each players score and displaying the score on a virtual pegboard. Works for two player games only and has multiple themes to choose from including a dark theme.
+Turn your phone into a digital cribbage pegboard.
 
-The Cribbage Scoring Pegboard app also includes cribbage rules of the game and a handy cribbage scoring chart for easy reference. Making this a great companion app for playing cribbage. So grab a deck of cards, this app, and have some fun!
+**Cribbage Pegboard** lets you keep score while playing cribbage with real cards. It replaces a physical cribbage board with a clear, easy-to-read virtual pegboard, making it ideal for home games, travel, or casual play.
 
-<div class="screenshots">
-  <div><img src="/images/cribbage-pegboard-iphone.png" alt="iPhone Screenshot 1"/></div>
-  <div><img src="/images/cribbage-pegboard-iphone2.png" alt="iPhone Screenshot 2"/></div>
-</div>
+Built specifically for two-player cribbage, the app makes adding points fast and intuitive while keeping the classic pegboard feel players expect. No distractions, no ads, and no in-app purchases.
 
-##### Features:
-* Simple and free (no in-app purchases needed)
-* Ad-free
-* UX designed for one-handed usage
-* Handy cribbage scoring chart
-* Multiple themes (including a dark theme)
+In addition to score tracking, the app includes a cribbage rules reference and a cribbage scoring chart, giving you quick access to scoring help and rule checks whenever you need them. Ideal for both new players and experienced cribbage fans.
+
+Whether you play occasionally or regularly, this app keeps cribbage scoring simple, accurate, and reliable.
+
+### Features
+
+- Digital cribbage pegboard with classic layout
+- Fast score tracking for two-player games
+- Built-in cribbage rules
+- Handy cribbage scoring chart
+- Multiple themes, including dark mode
+- One-handed, distraction-free design
+- Ad-free with no in-app purchases
