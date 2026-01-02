@@ -9,7 +9,7 @@ headerTagline: "Scoring made easy whether you're at home or on the go."
 headerImage: cribbage-pegboard-screen.png
 headerImageAlt: "Screenshot of Cribbage Pegboard on iPhone"
 storeGoogle: https://play.google.com/store/apps/details?id=com.lostleafstudio.cribbage_pegboard
-storeApple: https://itunes.apple.com/us/app/cribbage-scoring-pegboard/id1519800043?ls=1&mt=8
+storeApple: https://apps.apple.com/us/app/cribbage-pegboard-tracker/id1519800043
 ---
 
 Turn your phone into a digital cribbage pegboard.

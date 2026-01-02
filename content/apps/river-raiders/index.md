@@ -10,7 +10,7 @@ headerTagline: "Relive your childhood adventures on the<br/>river of no return."
 headerImage: river-raiders-screen.png
 headerImageAlt: "Screenshot of River Raiders on iPhone"
 storeGoogle: https://play.google.com/store/apps/details?id=com.lostleafstudio.riverraiders
-storeApple: https://itunes.apple.com/us/app/river-raiders
+storeApple: https://apps.apple.com/us/app/river-raiders/id6756220586
 ---
 
 Take to the skies in **River Raiders**, a modern tribute to one of the most iconic top-down shooters of the classic console era. Navigate the River of No Return, strike enemy forces, manage your fuel, and push your skills to survive farther than ever.
