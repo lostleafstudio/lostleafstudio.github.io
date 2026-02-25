@@ -107,7 +107,7 @@ header {
   width: auto;
 }
 
-.section-inner > * {
+.section-inner>* {
   flex: 1;
 }
 
@@ -134,7 +134,7 @@ header {
 .card {
   background: #fff;
   border-radius: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   height: 440px;
   overflow: hidden;
   padding: 60px;
@@ -150,9 +150,9 @@ header {
 .card__callout h2 {
   font-size: 2.25rem;
   margin: 0 0 1rem;
-  text-shadow: 
-    1px 1px 0 rgba(0, 0, 0, 0.5), 
-    2px 2px 0 rgba(0, 0, 0, 0.3), 
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.5),
+    2px 2px 0 rgba(0, 0, 0, 0.3),
     3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -184,6 +184,53 @@ header {
 .cribbage.card {
   background: linear-gradient(180deg, #4caf50, #2196f3);
   color: #fff;
+}
+
+/* Burger Card Variant */
+
+.burger.card {
+  background: #000;
+  color: #fff;
+  padding-right: 0;
+}
+
+.burger.card .card__callout h2 {
+  color: #ff0000;
+  font-size: 4rem;
+}
+
+.burger.card .card__callout h2 span {
+  color: #00ff00;
+  font-size: 3.35rem;
+}
+
+.burger.card .card__callout h2 span img {
+  margin: 0 10px 0 0;
+  vertical-align: text-top;
+}
+
+.burger.card .card__callout h2,
+.burger.card .card__callout h2 span {
+
+  font-family: 'Press Start 2P', sans-serif;
+  text-transform: uppercase;
+  line-height: 3.8rem;
+}
+
+.burger.card .card__callout a {
+  margin: 2rem 0;
+}
+
+.burger.card .card__image {
+  margin-bottom: -180px;
+  height: auto;
+  width: auto;
+}
+
+.burger.card .card__image img {
+  display: block;
+  height: 600px;
+  width: auto;
 }
 
 /* Raiders Card Variant */
@@ -348,10 +395,36 @@ header {
 }
 
 .app-header--cribbage .app-header__title {
-  text-shadow: 
-    1px 1px 0 rgba(0, 0, 0, 0.5), 
-    2px 2px 0 rgba(0, 0, 0, 0.3), 
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.5),
+    2px 2px 0 rgba(0, 0, 0, 0.3),
     3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Burger App Header Variant */
+
+.app-header--burger {
+  background: #000;
+  color: #ff0000;
+}
+
+.app-header--burger .app-header__title,
+.app-header--burger .app-header__tagline {
+  color: #ff0000;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.app-header--burger .app-header__title {
+  text-transform: uppercase;
+}
+
+.app-header--burger .app-header__title span {
+  color: #00ff00;
+}
+
+.app-header--burger .app-header__image {
+  padding-top: 80px;
+  width: 500px;
 }
 
 /* Raiders App Header Variant */
@@ -368,9 +441,9 @@ header {
 }
 
 .app-header--raiders .app-header__title {
-  text-shadow: 
-    1px 1px 0 rgba(0, 0, 0, 0.5), 
-    2px 2px 0 rgba(0, 0, 0, 0.3), 
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.5),
+    2px 2px 0 rgba(0, 0, 0, 0.3),
     3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -576,16 +649,16 @@ footer .feather {
   header {
     padding: 10px 0 16px;
   }
-  
+
   .brand__logo {
     height: 60px;
     width: 60px;
   }
-  
+
   .brand__title {
     font-size: 24px;
   }
-  
+
   .brand__description {
     font-size: 11px;
     letter-spacing: 0.9px;
@@ -602,6 +675,10 @@ footer .feather {
     padding: 32px 24px;
   }
 
+  .card__image {
+    margin: 0;
+  }
+
   .card__callout,
   .raiders.card .card__callout {
     padding: 40px 20px 0;
@@ -611,12 +688,29 @@ footer .feather {
     margin: 40px 0;
   }
 
-  .card__image {
-    margin: 0;
+  .burger.card .card__callout h2 {
+    transform: scale(0.75);
+  }
+
+  .burger.card .card__callout a {
+    margin: 1rem 0;
+  }
+
+  .burger.card .card__image {
+    margin: -20px 0 0;
+  }
+
+  .burger.card .card__image img {
+    height: 384px;
   }
 
   .raiders.card .card__image {
     display: none;
+  }
+
+  .app-header--burger .app-header__image,
+  .app-header--raiders .app-header__image {
+    padding-top: 0;
   }
 
   .section {

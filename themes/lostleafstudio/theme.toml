@@ -7,8 +7,8 @@ description = "A custom theme for Lost Leaf Studio at lostleafstudio.com"
 homepage = "http://lostleafstudio.com/"
 tags = ["company"]
 features = []
-min_version = "0.128.0"
+min_version = "0.156.0"
 
 [author]
-  name = "Josh Gerdes"
-  homepage = "http://joshgerdes.com"
+name = "Josh Gerdes"
+homepage = "http://joshgerdes.com"
