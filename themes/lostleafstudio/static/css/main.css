@@ -689,7 +689,18 @@ footer .feather {
   }
 
   .burger.card .card__callout h2 {
-    transform: scale(0.75);
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  .burger.card .card__callout h2 span {
+    font-size: 2.35rem;
+    line-height: 2.8rem;
+  }
+
+  .burger.card .card__callout h2 span img {
+    height: 2.2rem;
+    width: auto;
   }
 
   .burger.card .card__callout a {
